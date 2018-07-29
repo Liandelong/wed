@@ -162,17 +162,50 @@ namespace ITCastOCSS.BLL
 		{
 			return dal.GetListByPage( strWhere,  orderby,  startIndex,  endIndex);
 		}
-		/// <summary>
-		/// 分页获取数据列表
-		/// </summary>
-		//public DataSet GetList(int PageSize,int PageIndex,string strWhere)
-		//{
-			//return dal.GetList(PageSize,PageIndex,strWhere);
-		//}
+        /// <summary>
+        /// 分页获取数据列表
+        /// </summary>
+        //public DataSet GetList(int PageSize,int PageIndex,string strWhere)
+        //{
+        //return dal.GetList(PageSize,PageIndex,strWhere);
+        //}
 
-		#endregion  BasicMethod
-		#region  ExtensionMethod
+        #endregion  BasicMethod
+        #region  ExtensionMethod
 
+        /// <summary>
+        /// 根据对象删除
+        /// </summary>
+        public bool Delete(Model.Teacher tea)
+        {
+            return Delete(tea.TID);
+        }
+
+        /// <summary>
+        /// Teacher登录
+        /// </summary>
+        public bool login(string no,string pwd,out string msg, out Model.Teacher teacher)
+        {
+            bool r = false;
+            teacher = dal.GetModel(no);
+            if (teacher == null)
+            {
+                msg = "用户名不存在";
+            }
+            else
+            {
+                if (teacher.TPwd == pwd)
+                {
+                    r = true;
+                    msg = "登陆成功";
+                }
+                else
+                {
+                    msg = "密码错误";
+                }
+            }
+            return r;
+        }
 		#endregion  ExtensionMethod
 	}
 }

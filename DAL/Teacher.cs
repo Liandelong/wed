@@ -327,7 +327,7 @@ namespace ITCastOCSS.DAL
 			return DbHelperSQL.Query(strSql.ToString());
 		}
 
-		/*
+        /*
 		/// <summary>
 		/// 分页获取数据列表
 		/// </summary>
@@ -352,10 +352,34 @@ namespace ITCastOCSS.DAL
 			return DbHelperSQL.RunProcedure("UP_GetRecordByPage",parameters,"ds");
 		}*/
 
-		#endregion  BasicMethod
-		#region  ExtensionMethod
+        #endregion  BasicMethod
+        #region  ExtensionMethod
+        /// <summary>
+        /// 得到一个对象实体
+        /// </summary>
+        public ITCastOCSS.Model.Teacher GetModel(string no)
+        {
 
-		#endregion  ExtensionMethod
-	}
+            StringBuilder strSql = new StringBuilder();
+            strSql.Append("select  top 1 TID,TNo,TName,TSex,TMajor,TPwd,TDepartment,TTitle,TIsAdmin from Teacher ");
+            strSql.Append(" where TNo=@TNo");
+            SqlParameter[] parameters = {
+                    new SqlParameter("@TNo", SqlDbType.Char)
+            };
+            parameters[0].Value = no;
+
+            ITCastOCSS.Model.Teacher model = new ITCastOCSS.Model.Teacher();
+            DataSet ds = DbHelperSQL.Query(strSql.ToString(), parameters);
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                return DataRowToModel(ds.Tables[0].Rows[0]);
+            }
+            else
+            {
+                return null;
+            }
+        }
+        #endregion  ExtensionMethod
+    }
 }
 

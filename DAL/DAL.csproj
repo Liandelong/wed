@@ -138,6 +138,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBHelper.cs" />
+    <Compile Include="Kcb.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -148,6 +150,9 @@
     <Compile Include="Student.cs" />
     <Compile Include="Teacher.cs" />
     <Compile Include="Teaching.cs" />
+    <Compile Include="V_Score.cs" />
+    <Compile Include="V_teaching.cs" />
+    <Compile Include="Xuanke.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

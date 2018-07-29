@@ -1,8 +1,8 @@
-﻿using System;
-using System.Data;
-using System.Collections.Generic;
+﻿using ITCastOCSS.Model;
 using Maticsoft.Common;
-using ITCastOCSS.Model;
+using System;
+using System.Collections.Generic;
+using System.Data;
 namespace ITCastOCSS.BLL
 {
 	/// <summary>
@@ -171,6 +171,14 @@ namespace ITCastOCSS.BLL
 		//}
 
 		#endregion  BasicMethod
+        public  bool input(int eid,double score)
+        {
+           return  dal.input(eid, score) > 0;
+        }
+        public bool Xuanke(int sid,int cid)
+        {
+            return dal.Xuanke(sid, cid) > 0;
+        }
 		#region  ExtensionMethod
 
 		#endregion  ExtensionMethod

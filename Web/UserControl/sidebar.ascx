@@ -33,7 +33,7 @@
                         <tr>
                             <td>验证码：</td>
                             <td>
-                                <asp:TextBox ID="txtCode" style="width:30px; vertical-align:middle" runat="server"></asp:TextBox><asp:Image title="看不清？" ID="Image1" style=" cursor:pointer; vertical-align:middle; height:22px;" ImageUrl="../ValidateCode.ashx" onclick="this.ImageUrl='../ValidateCode.ashx?_='+Math.random()" runat="server"  />
+                                <asp:TextBox ID="txtCode" style="width:30px; vertical-align:middle" runat="server"></asp:TextBox><asp:Image title="看不清？" ID="Image1" style=" cursor:pointer; vertical-align:middle; height:22px;" ImageUrl="../ValidateCode.ashx"  onclick="this.ImageUrl='../ValidateCode.ashx?_='+Math.random()" runat="server"  />
                             </td>
                         </tr>
                         <tr>

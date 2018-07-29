@@ -171,6 +171,10 @@ namespace ITCastOCSS.BLL
 		//}
 
 		#endregion  BasicMethod
+        public Boolean Delete(Model.Course c)
+        {
+            return Delete(c.CID);
+        }
 		#region  ExtensionMethod
 
 		#endregion  ExtensionMethod

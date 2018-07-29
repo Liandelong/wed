@@ -308,6 +308,24 @@ namespace ITCastOCSS.DAL
 		}*/
 
 		#endregion  BasicMethod
+        public int input(int eid,double score)
+        {
+            string sql = string.Format( "update Elective set Score={0} where eid={1}", score,eid);
+            return DbHelperSQL.ExecuteSql(sql);
+        }
+
+
+        public int Xuanke(int sid,int cid)
+        {
+            string sql =string.Format("insert into Elective(sid,cid) values({0},{1})",sid,cid);
+            //   string sql = string.Format("delete  from Elective where eid=14");
+             return DbHelperSQL.ExecuteSql(sql);
+           //int r= DBHelper.getInstance().UpdateSql(sql);
+          
+           // DBHelper.getInstance().CloseConnetcion();
+            
+           // return r;
+        }
 		#region  ExtensionMethod
 
 		#endregion  ExtensionMethod

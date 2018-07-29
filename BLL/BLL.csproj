@@ -116,6 +116,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Kcb.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -126,6 +127,9 @@
     <Compile Include="Student.cs" />
     <Compile Include="Teacher.cs" />
     <Compile Include="Teaching.cs" />
+    <Compile Include="V_Score.cs" />
+    <Compile Include="V_teaching.cs" />
+    <Compile Include="Xuanke.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj">
