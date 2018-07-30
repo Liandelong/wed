@@ -28,15 +28,17 @@ namespace Web.student
                 {
                     CheckBox cb = GridView1.Rows[i].Cells[8].FindControl("cbb") as CheckBox;
                     Label lbl = GridView1.Rows[i].Cells[0].FindControl("ldl1") as Label;
+                Label Tlbl = GridView1.Rows[i].Cells[9].FindControl("Label1") as Label;
                     if (cb.Checked)
                     {
 
                         ITCastOCSS.BLL.Elective lel = new ITCastOCSS.BLL.Elective();
 
                     //lel.Xuanke(,3);
-                    if (lel.Xuanke(stu.SID, Convert.ToInt32(lbl.Text)))
+                    if (lel.Xuanke(stu.SID, Convert.ToInt32(lbl.Text), Convert.ToInt32(Tlbl.Text)))
                     {
                         msg = "选择成功";
+                        GridView1.DataBind();
                     }
                     else
                     {

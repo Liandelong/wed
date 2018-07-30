@@ -379,6 +379,15 @@ namespace ITCastOCSS.DAL
                 return null;
             }
         }
+
+        /// <summary>
+        /// 修改Teacher密码
+        /// </summary>
+        public int Teacherpwd(int tid,string pwd)
+        {
+            string sql = string.Format("update Teacher set TPwd='{0}' where tid={1}",pwd,tid);
+            return DbHelperSQL.ExecuteSql(sql);
+        }
         #endregion  ExtensionMethod
     }
 }

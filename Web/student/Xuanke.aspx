@@ -23,7 +23,7 @@
 
                 <asp:BoundField DataField="CName" HeaderText="课程" SortExpression="CName" />
                 <asp:BoundField DataField="TName" HeaderText="教师姓名" SortExpression="TName" />
-                <%--<asp:BoundField DataField="TID" HeaderText="TID" SortExpression="TID" Visible="False" />--%>
+                
                 <asp:BoundField DataField="Week" HeaderText="Week" SortExpression="Week" />
                 <asp:BoundField DataField="Timeperiod" HeaderText="Timeperiod" SortExpression="Timeperiod" />
                 <asp:BoundField DataField="Place" HeaderText="地点" SortExpression="Place" />
@@ -34,6 +34,15 @@
                 <asp:TemplateField>
                      <ItemTemplate>
                          <asp:CheckBox ID="cbb" runat="server" />
+                    </ItemTemplate>
+                </asp:TemplateField>
+
+                <asp:TemplateField HeaderText="TID" SortExpression="TID" Visible="False">
+                    <%--<EditItemTemplate>
+                        <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("TID") %>'></asp:TextBox>
+                    </EditItemTemplate>--%>
+                    <ItemTemplate>
+                        <asp:Label ID="Label1" runat="server" Text='<%# Bind("TID") %>'></asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
             </Columns>

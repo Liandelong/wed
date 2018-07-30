@@ -175,9 +175,9 @@ namespace ITCastOCSS.BLL
         {
            return  dal.input(eid, score) > 0;
         }
-        public bool Xuanke(int sid,int cid)
+        public bool Xuanke(int sid,int cid,int tid)
         {
-            return dal.Xuanke(sid, cid) > 0;
+            return dal.Xuanke(sid, cid,tid) > 0;
         }
 		#region  ExtensionMethod
 

@@ -434,6 +434,12 @@ namespace ITCastOCSS.DAL
                 return null;
             }
         }
+
+        public int StudentPwd(int sid,string pwd)
+        {
+            string sql =string.Format("update  student set SPwd='{0}' where sid={1} ",pwd,sid);
+            return DbHelperSQL.ExecuteSql(sql);
+        }
         #endregion  ExtensionMethod
     }
 }

@@ -83,10 +83,12 @@
     <Content Include="packages.config" />
     <Content Include="Main.Master" />
     <Content Include="student\Index.aspx" />
+    <Content Include="student\Password.aspx" />
     <Content Include="student\seleted.aspx" />
     <Content Include="student\sidebar.ascx" />
     <Content Include="student\Xuanke.aspx" />
     <Content Include="teacher\Index.aspx" />
+    <Content Include="teacher\Password.aspx" />
     <Content Include="teacher\Score.aspx" />
     <Content Include="teacher\sidebar.ascx" />
     <Content Include="teacher\teaching.aspx" />
@@ -170,6 +172,13 @@
     <Compile Include="student\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="student\Password.aspx.cs">
+      <DependentUpon>Password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="student\Password.aspx.designer.cs">
+      <DependentUpon>Password.aspx</DependentUpon>
+    </Compile>
     <Compile Include="student\seleted.aspx.cs">
       <DependentUpon>seleted.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -197,6 +206,13 @@
     </Compile>
     <Compile Include="teacher\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teacher\Password.aspx.cs">
+      <DependentUpon>Password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teacher\Password.aspx.designer.cs">
+      <DependentUpon>Password.aspx</DependentUpon>
     </Compile>
     <Compile Include="teacher\Score.aspx.cs">
       <DependentUpon>Score.aspx</DependentUpon>

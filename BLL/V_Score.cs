@@ -161,6 +161,11 @@ namespace ITCastOCSS.BLL
            
             return GetModelList("tid="+id);
         }
+        public List<ITCastOCSS.Model.v_Score> GetModelListBysTID(int id)
+        {
+
+            return GetModelList("sid=" + id);
+        }
         #endregion  ExtensionMethod
     }
 }

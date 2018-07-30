@@ -13,5 +13,27 @@ namespace Web.student
         {
 
         }
+
+        protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+            if (e.Row.RowType == DataControlRowType.DataRow)
+            {
+                string str = e.Row.Cells[5].Text;
+                if (str== "&nbsp;")
+                {
+                    e.Row.Cells[5].Text = "未录入成绩";
+                }
+            }
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            //for (int i= 0;i< GridView1.Rows.Count; i++)
+            //{
+            //    string score = GridView1.Rows[i].Cells[5].Text;
+            //    CheckBox chb = GridView1.Rows[i].Cells[6].FindControl("CheckBox1") as CheckBox;
+            //    if(score== "&nbsp;"&&)
+            //}
+        }
     }
 }

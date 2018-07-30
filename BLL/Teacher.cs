@@ -206,7 +206,15 @@ namespace ITCastOCSS.BLL
             }
             return r;
         }
-		#endregion  ExtensionMethod
-	}
+
+        /// <summary>
+        ///修改Teacger密码
+        /// </summary>
+        public bool Tescherpwd(int tid,string pwd)
+        {
+            return dal.Teacherpwd(tid,pwd) > 0;
+        }
+        #endregion  ExtensionMethod
+    }
 }
 

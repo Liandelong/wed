@@ -315,9 +315,9 @@ namespace ITCastOCSS.DAL
         }
 
 
-        public int Xuanke(int sid,int cid)
+        public int Xuanke(int sid,int cid,int tid)
         {
-            string sql =string.Format("insert into Elective(sid,cid) values({0},{1})",sid,cid);
+            string sql =string.Format("update Teaching set ActualNum=ActualNum+1 where cid={0} and tid={1}; insert into Elective(sid,cid) values({2},{3})",cid,tid, sid,cid);
             //   string sql = string.Format("delete  from Elective where eid=14");
              return DbHelperSQL.ExecuteSql(sql);
            //int r= DBHelper.getInstance().UpdateSql(sql);

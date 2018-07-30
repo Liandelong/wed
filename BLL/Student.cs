@@ -199,6 +199,11 @@ namespace ITCastOCSS.BLL
             return r;
         }
 
+        public bool StudentPwd(int sid,string pwd)
+        {
+            return dal.StudentPwd(sid, pwd) > 0;
+        }
+
         #endregion  ExtensionMethod
     }
 }
