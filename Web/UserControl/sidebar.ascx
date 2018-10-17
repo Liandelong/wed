@@ -1,4 +1,7 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="sidebar.ascx.cs" Inherits="Web.UserControl.sidebar" %>
+<script src="../script/jquery-1.7.1.js"></script>
+<script type="text/javascript">
+</script>
 <div class="bar notice">
                 <div class="title ">公告</div>
                 <div class="c">
@@ -33,8 +36,11 @@
                         <tr>
                             <td>验证码：</td>
                             <td>
-                                <asp:TextBox ID="txtCode" style="width:30px; vertical-align:middle" runat="server"></asp:TextBox><asp:Image title="看不清？" ID="Image1" style=" cursor:pointer; vertical-align:middle; height:22px;" ImageUrl="../ValidateCode.ashx"  onclick="this.ImageUrl='../ValidateCode.ashx?_='+Math.random()" runat="server"  />
-                            </td>
+                                <asp:TextBox ID="txtCode" style="width:30px; vertical-align:middle" runat="server">
+
+                                </asp:TextBox><asp:Image title="看不清？" ID="Image1" style=" cursor:pointer; vertical-align:middle; height:22px;" ImageUrl="../ValidateCode.ashx"  onclick="this.ImageUrl='../ValidateCode.ashx?_='+Math.random()" runat="server"  />
+                       
+                                 </td>
                         </tr>
                         <tr>
                             <td colspan="2" align="center">

@@ -22,7 +22,7 @@
                         <li><a href="Index.aspx">个人信息</a></li>
                         <li><a href="Password.aspx">更改密码</a></li>
                         <li><a href="Xuanke.aspx">在线选课</a></li>
-                        <li><a href="#">查询成绩</a></li>
+                        <li><a href="CheckScore.aspx">查询成绩</a></li>
                          <li><a href="../Index.aspx">退&nbsp;&nbsp;出</a></li>
                     </ul>
                     

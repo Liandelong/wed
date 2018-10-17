@@ -69,10 +69,12 @@
     <Content Include="Admin\CourseInfo.aspx" />
     <Content Include="Admin\Index.aspx" />
     <Content Include="Admin\sidebar.ascx" />
+    <Content Include="Admin\Students.aspx" />
     <Content Include="Admin\TeacherList.aspx" />
     <Content Include="Admin\TeacherInfo.aspx" />
     <Content Include="Admin\Teaching.aspx" />
     <Content Include="images\1.jpg" />
+    <Content Include="images\6.jpg" />
     <Content Include="images\bk3.jpg" />
     <Content Include="images\biao.gif" />
     <Content Include="images\bk1.jpg" />
@@ -82,6 +84,9 @@
     <Content Include="Index.aspx" />
     <Content Include="packages.config" />
     <Content Include="Main.Master" />
+    <Content Include="script\jquery-1.7.1.js" />
+    <Content Include="script\myfocus-2.0.1.min.js" />
+    <Content Include="student\CheckScore.aspx" />
     <Content Include="student\Index.aspx" />
     <Content Include="student\Password.aspx" />
     <Content Include="student\seleted.aspx" />
@@ -128,6 +133,13 @@
     <Compile Include="Admin\sidebar.ascx.designer.cs">
       <DependentUpon>sidebar.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Students.aspx.cs">
+      <DependentUpon>Students.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Students.aspx.designer.cs">
+      <DependentUpon>Students.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\TeacherList.aspx.cs">
       <DependentUpon>TeacherList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -165,6 +177,13 @@
       <DependentUpon>Main.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="student\CheckScore.aspx.cs">
+      <DependentUpon>CheckScore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="student\CheckScore.aspx.designer.cs">
+      <DependentUpon>CheckScore.aspx</DependentUpon>
+    </Compile>
     <Compile Include="student\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -253,10 +272,7 @@
       <Name>Model</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="images\Style\" />
-    <Folder Include="script\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

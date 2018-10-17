@@ -23,7 +23,7 @@
                 <div class="c">
                     <ul>
                         <li><a href="Index.aspx">课程管理</a></li>
-                        <li><a href="#">学生管理</a></li>
+                        <li><a href="Students.aspx">学生管理</a></li>
                         <li><a href="TeacherList.aspx">老师管理</a></li>
                         <li><a href="Teaching.aspx">排&nbsp;&nbsp;课</a></li>
                          <li><a href="../Index.aspx">退&nbsp;&nbsp;出</a></li>
