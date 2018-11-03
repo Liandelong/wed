@@ -2,7 +2,7 @@
 namespace ITCastOCSS.Model
 {
     /// <summary>
-    /// v_Score:实体类(属性说明自动提取数据库字段的描述信息)
+    /// v_Score:实体类(属sdf性说明自动提取数据库字段的描述信息)
     /// </summary>
     [Serializable]
     public partial class v_Score
